@@ -1,0 +1,9 @@
+<!-- creative selects (state and cities) and sort arrays -->
+<div>
+  <select (click)="selectedValue($event)">
+    <option selected="select" value=""></option>
+    <option *ngFor="let brewery of list |sort" [value]="brewery">
+      {{ brewery }}
+    </option>
+  </select>
+</div>
